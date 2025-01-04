@@ -3,76 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Tutoring Website</title>
+  <title>Your Name - Personal Website</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
+  <!-- Navbar -->
   <nav class="navbar">
-    <div class="container">
-      <h1 class="logo">Your Name Tutoring</h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <div class="logo">
+      <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L22 20H2z"/>
+        </svg>
+      </a>
     </div>
+    
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tutoring.html">Tutoring</a></li>
+    </ul>
   </nav>
 
   <!-- Hero Section -->
-  <header id="home" class="hero">
+  <header class="hero">
     <div class="container">
-      <h1>Personalized High School & SAT Tutoring</h1>
-      <p>Achieve your academic goals with expert guidance tailored to you.</p>
-      <div class="buttons">
-        <a href="#services" class="btn">Learn More</a>
-        <a href="#about" class="btn">Meet Your Tutor</a>
-        <a href="#contact" class="btn btn-primary">Sign Up</a>
-      </div>
+      <h1>Hello, I’m Aditya.<br>I’m a <span id="dynamic-text"></span></h1>
+      <p class="subtext">I'm a senior at Dougherty Valley High School, interested in math and computer science.</p>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hello! I'm [Your Name], a dedicated tutor with [Your Experience/Qualifications]. I specialize in helping high school students excel in their academics and conquer the SAT with confidence.</p>
-      <img src="assets/your-photo.jpg" alt="Your Photo">
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Services</h2>
-      <ul>
-        <li>High School Math & Science Tutoring</li>
-        <li>SAT/ACT Preparation</li>
-        <li>Custom Study Plans</li>
-        <li>Progress Tracking & Feedback</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="#">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Your Name Tutoring. All Rights Reserved.</p>
-    </div>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

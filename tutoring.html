@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutoring - Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L22 20H2z"/>
+        </svg>
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tutoring.html" class="active">Tutoring</a></li>
+    </ul>
+  </nav>
+
+  <!-- Tutoring Section -->
+  <section class="tutoring-section">
+    <div class="container">
+      <h1>Tutoring Services</h1>
+      <p>I offer one-on-one tutoring for:</p>
+      <ul>
+        <li>All high school and middle school math</li>
+        <li>Competition Math: AMC 8, 10, 12</li>
+        <li>AP Physics C, AP Computer Science</li>
+      </ul>
+      <p>Charge: $40/hr for one-on-one private tutoring, flexible scheduling!</p>
+    </div>
+  </section>
+
+  <!-- Sign-Up Form -->
+  <section class="form-section">
+    <div class="container">
+      <h2>Sign Up Form</h2>
+      <form action="https://docs.google.com/forms/d/1pk5DmmUBWm3Ra57qOuc_Mx04zXb86mkiZWzY9yqtoiw/formResponse" method="POST" target="_blank" onsubmit="handleFormSubmit(event);">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="entry.1013460202" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="entry.560603499" placeholder="Your Email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="entry.1716902789" placeholder="Subject (e.g., Algebra 2, AMC 8)" required>
+
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="entry.65840428" rows="5" placeholder="Any additional information"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- JavaScript for Clearing Form Fields -->
+  <script>
+    function handleFormSubmit(event) {
+      // Allow the form to submit first
+      setTimeout(() => {
+        const form = event.target;
+        form.reset(); // Clear all form fields after submission
+        console.log("Form fields cleared after submission!");
+      }, 500); // Wait 500ms to allow Google Forms submission
+    }
+  </script>
+</body>
+</html>
