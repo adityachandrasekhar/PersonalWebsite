@@ -166,11 +166,12 @@ body {
 
 .tutoring-section ul {
   list-style: disc;
-  margin: 20px auto; /* Centers the list */
-  padding-left: 20px; /* Adds padding for the bullets */
-  display: inline-block; /* Ensures the list doesn't stretch full width */
-  text-align: left; /* Aligns text within the list to the left */
+  margin: 20px auto;
+  padding-left: 40px; /* Increased from 20px to clearly align bullets */
+  max-width: 600px;   /* Keeps list width consistent */
+  text-align: left;
 }
+
 
 .tutoring-section li {
   margin-bottom: 10px; /* Space between list items */
